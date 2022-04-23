@@ -10,9 +10,12 @@ mirasımız sayfası, login sayfası ve iletişim sayfası olmak üzere toplam 6
 -Site tasarımı olarak mobil tarayıcılardan da girildiğinde uyumlu halde olması için bootstrap içeren responsive bir yapı kullanacağım.
 
  Hakkında Sayfası;
+ 
 -Bu sayfa giriş sayfası olup kendi hakkımda bilgiler(hobilerim vs.) ve resimlerimi içeren sayfadır.
 Özgeçmiş Sayfası;
+
 -Eğitim bilgilerimi içeren, CV niteliğinde, table ve divleri kullanarak oluşturacağım sayfadır.
+
  Şehrim Sayfası;
 -Yaşadığım şehri tanıtan kısa bir metin bulunacak.Bu metinde nüfus bilgileri,konum bilgileri yani şehir hakkında genel bilgiler olacaktır.
 -Bu sayfada ek olarak bir de şehir tanıtımı tarzında kısa ve güzel bir video linki bulunacaktır.
