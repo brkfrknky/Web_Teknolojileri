@@ -1,0 +1,156 @@
+body{
+    background: #14233c;
+    background: -webkit-linear-gradient(bottom , #49d6fd, #14233c);
+    background: linear-gradient(bottom , #49d6fd, #14233c); 
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-right
+{
+    float: left ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item
+{
+    padding-top: 5px;
+}
+
+.navbar-nav .nav-item p
+{
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.beceri h1{
+    font-weight: bold;
+    color:#E7CE9C;
+    margin-top: 20px;
+    margin-left: 350px;
+
+}
+
+
+.beceri-tablo{
+    position: relative;
+    float: left;
+    margin-bottom: 50px;
+    color:white;
+    left: 200px;
+
+}
+.beceri-tablo tr h4{
+    color:#E7CE9C;
+    margin-left: 70px;
+}
+.beceri-tablo p{
+    margin-top: 10px;
+    margin-left: 50px;
+    
+}
+
+
+
+.yabancidil-tablo{
+    position: relative;
+    float: left;
+    margin-bottom: 50px;
+    color:white;
+    left: 300px;
+}
+
+.yabancidil-tablo h4{
+    color:#E7CE9C;
+    margin-left: 60px;
+}
+
+.yabancidil-tablo p{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+
+.margin-ozgecmis
+{
+    margin-right: -25% !important;
+    margin-left: 5% !important;
+}
+
+.yazi
+{
+    margin-top: -50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.yazi h3
+{
+    font-weight: bold;
+    color:#E7CE9C;
+    margin-bottom: 20px;
+    margin-left: -65%;
+}
+
+.timeline
+{
+list-style-type: none ;
+position: relative;
+}
+.timeline:before
+{
+    content:'';
+    background:#14233c;
+    display: inline-block;
+    position: absolute;
+    left: -20px;
+    width: 2px;
+    height: 100%;
+    z-index: 1;
+}
+.timeline tr
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: #f2f2f2;
+}
+.timeline tr h4
+{
+    background-color: #14233c;
+    padding:5px 0 5px 20px;
+    color: #fff;
+    font-size: 15px;
+}
+.timeline tr h4 span
+{
+    font-weight: bold;
+    color: #cccccc;
+}
+.timeline tr::before
+{
+    content: '';
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #14233c;
+    left:-28px;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+
+
