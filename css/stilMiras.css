@@ -1,0 +1,81 @@
+body{
+    background: #14233c;
+    background: -webkit-linear-gradient(bottom , #49d6fd, #14233c);
+    background: linear-gradient(bottom , #49d6fd, #14233c); 
+}
+.navbar-brand img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+}
+
+.text-right
+{
+    float: left ;
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+}
+
+.navbar-nav .nav-item
+{
+    padding-top: 5px;
+}
+
+.navbar-nav .nav-item p
+{
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.w-100-kultur
+{
+height: 350px;
+width: 100% !important;
+}
+
+.carousel-inner 
+{
+    height: 500px;
+}
+.carousel-inner img
+{
+    height: 500px;
+}
+
+.mamure{
+    margin-top: 35px;
+    font-weight: bold;
+    color:#E7CE9C;
+}
+.yediuyurlar{
+    margin-top: 25px;
+    font-weight: bold;
+    color:#E7CE9C;
+
+}
+.yediuyurlar h4{
+    margin-left: 45px;
+    font-weight: bold;
+    color:#E7CE9C;
+}
+.yediuyurlar h3{
+    margin-left: 100px;
+    font-weight: bold;
+    color:#E7CE9C;
+}
+
+.gilindere{
+    margin-top: 25px;
+    font-weight: bold;
+    color:#E7CE9C;
+}
+
+.bilgi-yazi p{
+    color:rgb(255, 255, 255);
+}
