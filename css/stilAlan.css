@@ -33,49 +33,29 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.w-100-kultur
+
+
+
+.timeline
 {
-height: 350px;
-width: 100% !important;
+list-style-type: none ;
+position: relative;
 }
 
-.carousel-inner 
+
+.timeline li
 {
-    height: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    background: none;
+    color:#fff
 }
-.carousel-inner img
+.timeline li h4
 {
-    height: 500px;
+    background-color: #14233c;
+    padding:5px 0 5px 20px;
+    color: #E7CE9C;
+    font-size: 15px;
 }
 
-.mamure{
-    margin-top: 35px;
-    font-weight: bold;
-    color:#E7CE9C;
-}
-.malatyakalesi{
-    margin-top: 25px;
-    font-weight: bold;
-    color:#E7CE9C;
-
-}
-.malatyakalesi h4{
-    margin-left: 45px;
-    font-weight: bold;
-    color:#E7CE9C;
-}
-.malatyakalesi h3{
-    margin-left: 100px;
-    font-weight: bold;
-    color:#E7CE9C;
-}
-
-.gilindere{
-    margin-top: 25px;
-    font-weight: bold;
-    color:#E7CE9C;
-}
-
-.bilgi-yazi p{
-    color:rgb(255, 255, 255);
-}

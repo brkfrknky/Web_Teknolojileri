@@ -1,7 +1,9 @@
 body{
+
     background: #14233c;
     background: -webkit-linear-gradient(bottom , #49d6fd, #14233c);
     background: linear-gradient(bottom , #49d6fd, #14233c); 
+
 }
 .navbar-brand img{
     width: 40px;
@@ -33,7 +35,7 @@ body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.w-100-kultur
+.w-100-malatya
 {
 height: 350px;
 width: 100% !important;
@@ -48,34 +50,27 @@ width: 100% !important;
     height: 500px;
 }
 
-.mamure{
-    margin-top: 35px;
+.row-baslik h1{
     font-weight: bold;
     color:#E7CE9C;
 }
-.malatyakalesi{
-    margin-top: 25px;
-    font-weight: bold;
-    color:#E7CE9C;
-
-}
-.malatyakalesi h4{
-    margin-left: 45px;
-    font-weight: bold;
-    color:#E7CE9C;
-}
-.malatyakalesi h3{
-    margin-left: 100px;
-    font-weight: bold;
-    color:#E7CE9C;
+.row-baslik p{
+    color:white;
 }
 
-.gilindere{
-    margin-top: 25px;
+.row-bilgi h3{
+    font-weight: bold;
+    color:#E7CE9C;
+}
+.row-bilgi p{
+    color:white;
+}
+
+.row-tanitim h5{
     font-weight: bold;
     color:#E7CE9C;
 }
 
-.bilgi-yazi p{
-    color:rgb(255, 255, 255);
+.row-tanitim p{
+    color:white;
 }
