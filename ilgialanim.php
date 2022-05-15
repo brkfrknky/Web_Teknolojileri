@@ -5,14 +5,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/stilIletisim.css">
+    <link rel="stylesheet" href="css/stilAlan.css"> 
     <link rel="stylesheet" href="css/stilFooter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19cdc3d7ad.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>İletişim</title>
+    <title>İlgi Alanım</title>
   </head>
 <body>
 <header>
@@ -44,11 +44,11 @@
             </li>
             
             <li class="nav-item">
-              <a class="nav-link ml-3 text-white fas fa-music" href="ilgialanim.php"> <p> &nbspİlgi Alanım</p></a>
-          </li>
+              <a class="nav-link ml-3 text-success fas fa-dollar-sign" href="ilgialanim.php"> <p> &nbspİlgi Alanım</p></a>
+            </li>
 
             <li class="nav-item">
-                <a class="nav-link ml-3 text-success fas fa-phone-square-alt" href="iletisim.html"> <p> &nbspİletişim</p></a>
+                <a class="nav-link ml-3 text-white fas fa-phone-square-alt" href="iletisim.html"> <p> &nbspİletişim</p></a>
             </li>
             <li class="nav-item" >
               <a class="nav-link ml-3 text-primary fas fa-sign-in-alt" href="login.php"> <p> &nbspGiriş Yap</p></a>
@@ -58,90 +58,49 @@
       </nav>
 </header>
    
-
-<section id="sub-container">
-  <section id="sub-content">
-    <div class="container" id="contact-form">
-      <script>
-function validateForm()
-{
-
-  var x=document.forms["myForm"]["isim"].value;
-  if(x=="")
-  {
-    alert("İsim Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var s=document.forms["myForm"]["soyisim"].value;
-  if(s=="")
-  {
-    alert("Soyisim Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var y=document.forms["myForm"]["e-mail"].value;
-  if(y=="")
-  {
-    alert("E-Mail Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var z=document.forms["myForm"]["phone"].value;
-  if(z=="")
-  {
-    alert("Telefon Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var a=document.forms["myForm"]["message"].value;
-  if(a=="")
-  {
-    alert("Mesaj Alanını Boş Bırakmayınız");
-    return false;
-  }
-}       
-      </script>
-      <div class="row iletisim">
-        <div class="col-md-12">
-            <h3>İletişim Formu</h3>
-            <form name="myForm" onsubmit="return validateForm()" action="form.php" method="post">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="isim" placeholder="İsiminizi giriniz">
-        </div>
-        <div class="col-md-3">
-          <input class="info" type="text" name="soyisim" placeholder="Soyadinizi giriniz">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="e-mail" placeholder="E-posta adresinizi giriniz">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="phone" placeholder="Telefonunuzu giriniz">
-        </div>
-        <div class="col-md-12">
-            <br><input class="message-box" type="text" name="message" placeholder="Mesajınızı Giriniz">
-        </div>
-        <div class="col-md-8 ">
-            <p>Siteyi Nerden Buldunuz</p>
-            <select name="nerden" class="nerden">
-                <option>GitHub</option>
-                <option>Sunum</option>
-            </select>
-        </div>
-        <div class="col-md-2 ">
-            <input type="submit" value="Gönder">
-        </div>
-        <div class="col-md-2">
-            <input type="reset" value="Temizle">
-        </div>
-    </form>
-    </div>
-    
-    
-    
-
+<div class="container kur">
+<?php
+    $JSON = json_decode(file_get_contents('https://api.genelpara.com/embed/doviz.json'), true);
+?>
+<div class="timeline">
+<ul>
+    <li>
+        <h4>USD</h4><br>
+        <p>Alış: <?php echo $JSON['USD']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['USD']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['USD']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>EUR</h4><br>
+        <p>Alış: <?php echo $JSON['EUR']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['EUR']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['EUR']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>GBP</h4><br>
+        <p>Alış: <?php echo $JSON['GBP']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['GBP']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['GBP']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>CHF</h4><br>
+        <p>Alış: <?php echo $JSON['CHF']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['CHF']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['CHF']['degisim']; ?></p>
+    </li>
+    <li>
+        <h4>CAD</h4><br>
+        <p>Alış: <?php echo $JSON['CAD']['alis']; ?></p>
+        <p>Fiyat: <?php echo $JSON['CAD']['satis']; ?></p>
+        <p>Değişim: <?php echo $JSON['CAD']['degisim']; ?></p>
+    </li>
+</ul>
 </div>
-</section>
-</section>
+</div>
 
- 
+
+
+
 
 
 
@@ -167,6 +126,7 @@ function validateForm()
         <p>© 2022 Tüm Hakları Saklıdır.<br>Berke Furkan Kaya</p>
     </div>
 </footer>
+
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

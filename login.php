@@ -1,3 +1,5 @@
+ <?php include "loginKontrol.php";?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,14 +7,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/stilIletisim.css">
+    <link rel="stylesheet" href="css/stilLogin.css">
     <link rel="stylesheet" href="css/stilFooter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/19cdc3d7ad.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>İletişim</title>
+    <title>Kullanıcı Girişi</title>
   </head>
 <body>
 <header>
@@ -48,7 +50,7 @@
           </li>
 
             <li class="nav-item">
-                <a class="nav-link ml-3 text-success fas fa-phone-square-alt" href="iletisim.html"> <p> &nbspİletişim</p></a>
+                <a class="nav-link ml-3 text-white fas fa-phone-square-alt" href="iletisim.html"> <p> &nbspİletişim</p></a>
             </li>
             <li class="nav-item" >
               <a class="nav-link ml-3 text-primary fas fa-sign-in-alt" href="login.php"> <p> &nbspGiriş Yap</p></a>
@@ -57,95 +59,24 @@
         </div>
       </nav>
 </header>
-   
 
-<section id="sub-container">
-  <section id="sub-content">
-    <div class="container" id="contact-form">
-      <script>
-function validateForm()
-{
-
-  var x=document.forms["myForm"]["isim"].value;
-  if(x=="")
-  {
-    alert("İsim Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var s=document.forms["myForm"]["soyisim"].value;
-  if(s=="")
-  {
-    alert("Soyisim Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var y=document.forms["myForm"]["e-mail"].value;
-  if(y=="")
-  {
-    alert("E-Mail Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var z=document.forms["myForm"]["phone"].value;
-  if(z=="")
-  {
-    alert("Telefon Alanını Boş Bırakmayınız");
-    return false;
-  }
-  var a=document.forms["myForm"]["message"].value;
-  if(a=="")
-  {
-    alert("Mesaj Alanını Boş Bırakmayınız");
-    return false;
-  }
-}       
-      </script>
-      <div class="row iletisim">
-        <div class="col-md-12">
-            <h3>İletişim Formu</h3>
-            <form name="myForm" onsubmit="return validateForm()" action="form.php" method="post">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="isim" placeholder="İsiminizi giriniz">
-        </div>
-        <div class="col-md-3">
-          <input class="info" type="text" name="soyisim" placeholder="Soyadinizi giriniz">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="e-mail" placeholder="E-posta adresinizi giriniz">
-        </div>
-        <div class="col-md-3">
-            <input class="info" type="text" name="phone" placeholder="Telefonunuzu giriniz">
-        </div>
-        <div class="col-md-12">
-            <br><input class="message-box" type="text" name="message" placeholder="Mesajınızı Giriniz">
-        </div>
-        <div class="col-md-8 ">
-            <p>Siteyi Nerden Buldunuz</p>
-            <select name="nerden" class="nerden">
-                <option>GitHub</option>
-                <option>Sunum</option>
-            </select>
-        </div>
-        <div class="col-md-2 ">
-            <input type="submit" value="Gönder">
-        </div>
-        <div class="col-md-2">
-            <input type="reset" value="Temizle">
-        </div>
-    </form>
-    </div>
-    
-    
-    
-
-</div>
-</section>
-</section>
-
- 
+<form class="box" action="loginKontrol.php" method="post">
+            <div class="form">
+              <h3>Login</h3>
+            <input class="info" type="text" name="mail" placeholder="E-posta adresinizi giriniz" value="" required><br>
+            <input class="info" type="password" name="pass" placeholder="Parolanızı Giriniz" value="" required><br>
+            <input type="submit" name="gonder" value="Giriş"><br>
+            </div>
+        </form>  
 
 
 
-<footer class="footer-foot">
+
+
+
+
+
+        <footer class="footer-foot">
     <div class="footer-right">
         <a href="https://www.instagram.com/berke_ky/"><i class="fa fa-instagram"></i></a>
         <a href="https://twitter.com/berkefrknkaya"><i class="fa fa-twitter"></i></a>
@@ -167,6 +98,7 @@ function validateForm()
         <p>© 2022 Tüm Hakları Saklıdır.<br>Berke Furkan Kaya</p>
     </div>
 </footer>
+
 
 <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
